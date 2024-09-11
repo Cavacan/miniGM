@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カードアニメーション</title>
+    <link rel="stylesheet" href="styles.css">
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" id="card1">
+            <div class="card-image card-front" style="background-image: url('<%= asset_path('01.png') %>');"></div>
+            <div class="card-image card-back" style="background-image: url('<%= asset_path('red.png') %>');"></div>
+        </div>
+        <div class="card" id="card2">
+            <div class="card-image card-front" style="background-image: url('<%= asset_path('02.png') %>');"></div>
+            <div class="card-image card-back" style="background-image: url('<%= asset_path('red.png') %>');"></div>
+        </div>
+        <div class="card" id="card3">
+            <div class="card-image card-front" style="background-image: url('<%= asset_path('03.png') %>');"></div>
+            <div class="card-image card-back" style="background-image: url('<%= asset_path('red.png') %>');"></div>
+        </div>
+    </div>
+    <button id="flipButton">カードをめくる</button>
+    <script src="script.js"></script>
+</body>
+</html>
