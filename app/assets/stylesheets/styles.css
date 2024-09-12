@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #b5e8ff;
 }
 
 .card-container {
@@ -49,4 +49,13 @@ body {
 
 .card.flipped .card-back {
     transform: rotateY(180deg);
+}
+
+img {
+width: 100px;
+height: auto;
+}
+
+.hand {
+margin-top: 20px;
 }
